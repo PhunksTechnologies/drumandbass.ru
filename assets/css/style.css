@@ -24,3 +24,12 @@ body {
 .player {
     text-align: center;
 }
+
+.track_info {
+    font-size: 10px;
+    width: 18em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+    opacity: 0.6;
+}
