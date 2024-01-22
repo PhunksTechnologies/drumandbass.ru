@@ -5,11 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/gallery.css">
+    <link rel="stylesheet" href="./assets/css/navigation.css">
     <link rel="shortcut icon" href="./assets/images/favicon/icons8-metal-music-96.png" type="image/x-icon">
     <script src="./assets/js/gallery_func.js"></script>
+    <script src="./assets/js/navigation.js"></script>
+    <script src="./assets/js/pages.js"></script>
     <title>drumandbass.ru</title>
 </head>
 <body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="navbar_el" onclick="load_page('index')">База</div>
+        <div class="navbar_el" onclick="load_page('soon')">Подкасты</div>
+        <div class="navbar_el" onclick="load_page('soon')">Радио и Эфиры</div>
+        <div class="navbar_el" onclick="load_page('soon')">Команда</div>
+        <div class="navbar_el" onclick="load_page('blog')">Блог</div>
+        <div class="navbar_el" onclick="load_page('soon')">Форум</div>
+        <div class="navbar_el" onclick="load_page('soon')">Сотрудничество</div>
+        <div class="navbar_el" onclick="load_page('soon')">Галерея</div>
+        <div class="navbar_el" onclick="load_page('soon')">Приложения</div>
+        <div class="navbar_el" onclick="load_page('soon')">Афиша</div>
+        <div class="navbar_el" onclick="load_page('soon')">Контакты</div>
+
+    </div>
+    <!-- MAIN CONTENT -->
     <div class="main">
         <div class="welcome">
             <p>DRUMANDBASS.RU</p><br><br>
@@ -24,34 +43,29 @@
                 <p>Basslogik live @Hvat-2023.10.21</p>
             </div>
         </div>
-        <!-- GALLERY -->
-        <!-- <header>
-            <div class="headings">
-              <h1></h1>
-              <p class="text-muted"></p>
-            </div>
-          </header> -->
-          <section class="gallery">
-          <div class="container-fluid">
-            <div class="row galleryList">
-              <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/1.jpg" alt="" class="img-responsive"/></div>
-              <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/2.jpg" alt="" class="img-responsive"/></div>
-              <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/3.jpg" alt="" class="img-responsive"/></div>
-              <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/4.jpg" alt="" class="img-responsive"/></div>
-              <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/5.jpg" alt="" class="img-responsive"/></div>
-              <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/6.jpg" alt="" class="img-responsive"/></div>
-              <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/7.jpg" alt="" class="img-responsive"/></div>
-              <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/8.jpg" alt="" class="img-responsive"/></div>
-              <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/9.jpg" alt="" class="img-responsive"/></div>
-              <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/10.jpg" alt="" class="img-responsive"/></div>
-              <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/11.jpg" alt="" class="img-responsive"/></div>
-              <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/12.jpg" alt="" class="img-responsive"/></div>
-              <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/13.jpg" alt="" class="img-responsive"/></div>
-              <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/14.jpg" alt="" class="img-responsive"/></div>
-              <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/15.jpg" alt="" class="img-responsive"/></div>
-            </div>
-          </div>
-          </section>
+        <div class="main_container">
+            <section class="gallery">
+                <div class="container-fluid">
+                    <div class="row galleryList">
+                    <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/1.jpg" alt="" class="img-responsive"/></div>
+                    <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/2.jpg" alt="" class="img-responsive"/></div>
+                    <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/3.jpg" alt="" class="img-responsive"/></div>
+                    <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/4.jpg" alt="" class="img-responsive"/></div>
+                    <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/5.jpg" alt="" class="img-responsive"/></div>
+                    <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/6.jpg" alt="" class="img-responsive"/></div>
+                    <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/7.jpg" alt="" class="img-responsive"/></div>
+                    <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/8.jpg" alt="" class="img-responsive"/></div>
+                    <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/9.jpg" alt="" class="img-responsive"/></div>
+                    <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/10.jpg" alt="" class="img-responsive"/></div>
+                    <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/11.jpg" alt="" class="img-responsive"/></div>
+                    <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/12.jpg" alt="" class="img-responsive"/></div>
+                    <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/13.jpg" alt="" class="img-responsive"/></div>
+                    <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/14.jpg" alt="" class="img-responsive"/></div>
+                    <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/15.jpg" alt="" class="img-responsive"/></div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
 </body>
 </html>

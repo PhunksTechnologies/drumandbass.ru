@@ -3,6 +3,48 @@
 body {
     background: white;
     resize: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    top: 0;
+    margin-bottom: 4em;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    background: white;
+    position: fixed;
+    z-index: 2000;
+}
+
+.navbar_el {
+    padding-top: 2em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    width: -webkit-fill-available;
+    background: transparent;
+    min-height: 3em;
+    margin-right: 0.14em;
+    color: rgb(6, 8, 0);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Montserrat;
+    text-align: center;
+    text-indent: unset;
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.navbar_el:hover {
+    background: #e2e60c;
+    color: rgb(49, 47, 47);
+    opacity: 1;
+}
+
+.navbar_el:nth-last-child(1) {
+    margin: 0;
 }
 
 .main {
@@ -11,6 +53,7 @@ body {
     padding: 1em;
     user-select: none;
     resize: none;
+    margin-top: 5em;
 }
 
 .welcome {
@@ -39,4 +82,9 @@ body {
 
 .gallery {
     margin-top: 2em;
+}
+
+.text_container {
+    text-indent: 4em;
+    font-size: 14px;
 }
