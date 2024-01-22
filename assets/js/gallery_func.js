@@ -1,7 +1,7 @@
 function enlarge (element){
     // element.style.maxHeight = '20em';
     // element.style.transform = 'scale(4.1)';
-    element.style.transform = 'scale(3.6) translate(0, -30%)';
+    element.style.transform = 'scale(3.6) translate(0, -20%)';
     element.style.zIndex = 1000;
 }
 
