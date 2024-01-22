@@ -53,34 +53,88 @@ body {
     padding: 1em;
     user-select: none;
     resize: none;
-    margin-top: 5em;
+    margin-top: 4em;
 }
 
 .welcome {
     margin: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
+    margin-top: 3%;
     text-align: center;
     resize: none;
 }
+
+/* PLAYER */
 
 .player {
     text-align: center;
     resize: none;
+    display: flex;
+    text-align: center;
+    resize: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: 40%;
+    /* width: 4em; */
+    margin-right: auto;
+    width: 40%;
 }
 
-.track_info {
-    font-size: 10px;
-    width: 18em;
-    margin-left: auto;
+.player_info {
+    font-size: 12px;
+    min-width: 18em;
+    margin-left: 2em;
     margin-right: auto;
     text-align: right;
     opacity: 0.6;
     resize: none;
+    text-align: left;
 }
 
-.galler, .text_container {
+.playlist {
+    display: flex;
+    flex-direction: row;
+}
+
+.nowplaying {
+    /* color: #ad0926; */
+    background: #fdbf21;
+    /* font-size:larger; */
+    pointer-events: none;
+}
+
+.tracklist {
+    font-weight: bold;
+    color: black;
+    margin-left: 3em;
+    cursor: pointer;
+    /* word-wrap: unset; */
+    word-break: keep-all;
+    min-width: max-content;
+}
+
+.track {
+    padding: 0.2px 4px 0.2px 4px;
+    border-radius: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.gallery {
+    margin-top: 2em;
+}
+
+.text_container {
     margin-top: 2em;
     text-indent: 4em;
     font-size: 14px;

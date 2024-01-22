@@ -10,6 +10,7 @@
     <script src="./assets/js/gallery_func.js"></script>
     <script src="./assets/js/navigation.js"></script>
     <script src="./assets/js/pages.js"></script>
+    <script src="./assets/js/player.js"></script>
     <title>drumandbass.ru</title>
 </head>
 <body>
@@ -36,11 +37,20 @@
             <p>А пока послушай вот это</p>
         </div>
         <div class="player">
-            <audio controls>
-                <source src="http://dl.dropbox.com/scl/fi/mzvsec02b3nerpazam1rc/Hvat-2023.10.21-BASS-LOGIK.mp3?rlkey=zqwlhpxp3zrbxzr6civu74fp6&dl=0" type="audio/mp3">
+            <audio controls style="float: right" id="audio">
+                <source id="audio_src" src="http://dl.dropbox.com/scl/fi/mzvsec02b3nerpazam1rc/Hvat-2023.10.21-BASS-LOGIK.mp3?rlkey=zqwlhpxp3zrbxzr6civu74fp6&dl=0" type="audio/mp3">
             </audio>
-            <div class="track_info">
-                <p>Basslogik live @Hvat-2023.10.21</p>
+            <div class="player_info">
+                <div class="playlist">
+                    <!-- <p id="nowplaying">Basslogik live @Hvat-2023.10.21</p> -->
+                    <div class="tracklist">
+                        <p class="track nowplaying" onclick="switch_track(this, 0)">Basslogik live @Hvat-2023.10.21</p>
+                        <p class="track" onclick="switch_track(this, 1)">Basslogik live @Hvat-2023.08.05</p>
+                        <p class="track" onclick="switch_track(this, 2)">No Lag live @Hvat-2023.08.05</p>
+                        <p class="track" onclick="switch_track(this, 3)">Phunky Promo 2023.07.30</p>
+                        <p class="track" onclick="switch_track(this, 4)">DNB Radio</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="main_container">
@@ -62,6 +72,10 @@
                     <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/13.jpg" alt="" class="img-responsive"/></div>
                     <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/14.jpg" alt="" class="img-responsive"/></div>
                     <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/15.jpg" alt="" class="img-responsive"/></div>
+                    <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/16.jpg" alt="" class="img-responsive"/></div>
+                    <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/17.jpg" alt="" class="img-responsive"/></div>
+                    <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/18.jpg" alt="" class="img-responsive"/></div>
+                    <div class="col-xs-4 col-sm-3 col-md-2 galleryList-item blurZoom" onclick="enlarge(this.getElementsByTagName('img')[0])" onmouseout="shrink(this.getElementsByTagName('img')[0])"><img src="./assets/images/gallery/19.jpg" alt="" class="img-responsive"/></div>
                     </div>
                 </div>
             </section>
