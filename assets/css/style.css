@@ -2,6 +2,7 @@
 
 body {
     background: white;
+    resize: none;
 }
 
 .main {
@@ -9,18 +10,21 @@ body {
     font-size: 24px;
     padding: 1em;
     user-select: none;
+    resize: none;
 }
 
 .welcome {
     margin: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10%;
+    margin-top: 5%;
     text-align: center;
+    resize: none;
 }
 
 .player {
     text-align: center;
+    resize: none;
 }
 
 .track_info {
@@ -30,4 +34,9 @@ body {
     margin-right: auto;
     text-align: right;
     opacity: 0.6;
+    resize: none;
+}
+
+.gallery {
+    margin-top: 6em;
 }
