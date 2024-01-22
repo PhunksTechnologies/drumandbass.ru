@@ -80,11 +80,7 @@ body {
     resize: none;
 }
 
-.gallery {
-    margin-top: 2em;
-}
-
-.text_container {
+.galler, .text_container {
     margin-top: 2em;
     text-indent: 4em;
     font-size: 14px;
