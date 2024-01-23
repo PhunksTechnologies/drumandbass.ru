@@ -11,7 +11,7 @@ const videos = [
 ];
 
 window.onload = () => {
-    // console.log('executed onload');
+    console.log('executed onload');
     video_player.volume = 0;
     change_video();
 
