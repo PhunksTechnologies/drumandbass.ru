@@ -25,7 +25,7 @@ window.onload = () => {
 };
 
 async function change_video(){
-    video_player_src.src = videos[Math.floor(videos.length-1 * Math.random() * 10)];
+    video_player_src.src = videos[Math.floor(Math.random() * videos.length-1)];
     // video_closer.style.marginLeft = await video_player.offsetWidth + 50 + 'px';
     await video_player.load();
     await video_player.play();    
