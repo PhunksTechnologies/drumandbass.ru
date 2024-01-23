@@ -69,7 +69,6 @@ body {
 /* PLAYER */
 
 .player {
-    text-align: center;
     resize: none;
     display: flex;
     text-align: center;
@@ -118,6 +117,14 @@ body {
 .track {
     padding: 0.2px 4px 0.2px 4px;
     border-radius: 2px;
+}
+
+/* VIDEO PLAYER */
+
+#video_player {
+    height: 10em !important;
+    background: black;
+    margin-left: 2em;
 }
 
 .gallery {

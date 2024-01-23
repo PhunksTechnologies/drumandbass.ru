@@ -11,6 +11,7 @@
     <script src="./assets/js/navigation.js"></script>
     <script src="./assets/js/pages.js"></script>
     <script src="./assets/js/player.js"></script>
+    <script src="./assets/js/video_player.js"></script>
     <title>drumandbass.ru</title>
 </head>
 <body>
@@ -37,7 +38,7 @@
             <p>А пока послушай вот это</p>
         </div>
         <div class="player">
-            <audio controls style="float: right" id="audio">
+            <audio controls style="float: right; min-width: 5em" id="audio">
                 <source id="audio_src" src="http://dl.dropbox.com/scl/fi/mzvsec02b3nerpazam1rc/Hvat-2023.10.21-BASS-LOGIK.mp3?rlkey=zqwlhpxp3zrbxzr6civu74fp6&dl=0" type="audio/mp3">
             </audio>
             <div class="player_info">
@@ -52,7 +53,13 @@
                     </div>
                 </div>
             </div>
+            <div class="video_player">
+                <video id="video_player" autoplay volume=0>
+                    <source id="video_player_src" src="" type="video/mp4">
+                </video>
+            </div>
         </div>
+
         <div class="main_container">
             <section class="gallery">
                 <div class="container-fluid">
