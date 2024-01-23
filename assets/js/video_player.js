@@ -11,6 +11,7 @@ const videos = [
 ];
 
 window.onload = () => {
+    video_player.volume = 0;
     change_video();
     // let video_player_timer = setInterval(change_video, 1200000);
     video_player.onended = (event) => {
@@ -22,8 +23,7 @@ window.onload = () => {
 };
 
 function change_video(){
-    video_player_src.src = videos[Math.floor(videos.length-1 * Math.random())];
-    video_player.volume = 0;
+    video_player_src.src = videos[Math.floor(videos.length-1 * Math.random() * 10)];
     video_player.load();
     video_player.play();
 };
