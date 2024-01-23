@@ -123,8 +123,9 @@ body {
 
 #video_player {
     height: 10em !important;
-    background: black;
+    background: transparent;
     margin-left: 2em;
+    border-radius: 4px;
 }
 
 .gallery {
