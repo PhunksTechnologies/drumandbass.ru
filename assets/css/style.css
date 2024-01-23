@@ -175,14 +175,14 @@ body {
 }
 
 #video_closer {
-    display: block;
+    display: none;
     opacity: 0.3;
-    /* margin-left: 0.4em; */
     width: 0.3em;
     height: 0.3em;
     position: absolute;
-    top: 14.06em;
+    top: 14.05em;
     margin-left: 1.6em;
+    cursor: pointer;
 }
 
 #video_closer:hover {

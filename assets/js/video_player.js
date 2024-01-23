@@ -11,8 +11,10 @@ const videos = [
 ];
 
 window.onload = () => {
+    // console.log('executed onload');
     video_player.volume = 0;
     change_video();
+
     // let video_player_timer = setInterval(change_video, 1200000);
     video_player.onended = (event) => {
         change_video();
@@ -22,8 +24,23 @@ window.onload = () => {
     // video_player_timer.play();
 };
 
-function change_video(){
+async function change_video(){
     video_player_src.src = videos[Math.floor(videos.length-1 * Math.random() * 10)];
-    video_player.load();
-    video_player.play();
+    // video_closer.style.marginLeft = await video_player.offsetWidth + 50 + 'px';
+    await video_player.load();
+    await video_player.play();    
 };
+
+function show_video(element) {
+    // video_closer.style.marginLeft = video_player.offsetWidth + 50 + 'px';
+    element.style.display='none';
+    setTimeout(() => video_closer.style.display='block', 500);
+    setTimeout(() => video_player.style.display='block', 500);
+}
+
+function hide_video(element) {
+    video_player.style.display='none';
+    element.style.display='none';
+    video_closer.style.display='none';
+    video_placeholder.style.display='block';
+}

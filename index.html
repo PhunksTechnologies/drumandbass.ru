@@ -3,6 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- preload video-->
+        <link rel="preload" as="video" href="./assets/video/1.mov">
+        <link rel="preload" as="video" href="./assets/video/2.mov">
+        <link rel="preload" as="video" href="./assets/video/3.mp4">
+        <link rel="preload" as="video" href="./assets/video/4.mov">
+        <link rel="preload" as="video" href="./assets/video/5.mp4">
+        <link rel="preload" as="video" href="./assets/video/6.mov">
+        <link rel="preload" as="video" href="./assets/video/7.mov">
+        <link rel="preload" as="video" href="./assets/video/8.mp4">
+        <link rel="preload" as="video" href="./assets/video/9.mp4">        
+
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/gallery.css">
     <link rel="stylesheet" href="./assets/css/navigation.css">
@@ -49,18 +61,19 @@
                         <p class="track" onclick="switch_track(this, 1)">Basslogik live @Hvat-2023.08.05</p>
                         <p class="track" onclick="switch_track(this, 2)">NoLag live @Hvat-2023.08.05</p>
                         <p class="track" onclick="switch_track(this, 3)">Phunky Promo 2023.07.30</p>
-                        <p class="track" onclick="switch_track(this, 4)">DNB Radio</p>
+                        <p class="track" onclick="switch_track(this, 4)">Kxtorze BAD BASS 2024</p>
+                        <p class="track" onclick="switch_track(this, 5)">DNB Radio</p>
                     </div>
                 </div>
             </div>
             <div class="video_player">
                 <div class="show_control">
-                    <img class="icon" id="video_placeholder" src="./assets/images/clipart/watch.png" alt="" onclick="this.style.display='none'; video_closer.style.display='block'; video_player.style.display= 'block'" style="margin-bottom: 0.4em">
+                    <img class="icon" id="video_placeholder" src="./assets/images/clipart/watch.png" onclick="show_video(this)" style="margin-bottom: 0.4em">
                 </div>
-                <video class="fade-in" id="video_player" autoplay volume=0>
+                <video preload="auto" class="fade-in" id="video_player" autoplay volume=0>
                     <source id="video_player_src" src="" type="video/mp4">
                 </video>
-                <img class="icon fade-in" style="display: none" id="video_closer" src="./assets/images/clipart/close.png" alt="" style="display: none !important;"onclick="this.style.display='none'; video_player.style.display= 'none'; video_placeholder.style.display='block'">
+                <img class="icon fade-in" id="video_closer" src="./assets/images/clipart/close.png" style="display: none !important;" onclick="hide_video(this)">
             </div>
         </div>
 
