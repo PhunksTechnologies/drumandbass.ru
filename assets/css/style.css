@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
+/* ANIMATIONS */
+.fade-in {
+	-webkit-animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+/* MAIN */
 body {
     background: white;
     resize: none;
@@ -120,12 +144,49 @@ body {
 }
 
 /* VIDEO PLAYER */
+.video_player {
+    display: flex;
+    flex-direction: row;
+    min-width: 250px;
+}
 
 #video_player {
+    display: none;
     height: 10em !important;
     background: transparent;
     margin-left: 2em;
     border-radius: 4px;
+    position: absolute;
+    top: 14em;
+}
+
+.show_control {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+    align-self: center;
+}
+
+.icon {
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#video_closer {
+    display: block;
+    opacity: 0.3;
+    /* margin-left: 0.4em; */
+    width: 0.3em;
+    height: 0.3em;
+    position: absolute;
+    top: 14em;
+    margin-left: 7.4em;
+}
+
+#video_closer:hover {
+    opacity: 1;
 }
 
 .gallery {
