@@ -128,7 +128,7 @@ body {
     margin-left: 2em;
     margin-right: auto;
     text-align: right;
-    opacity: 0.6;
+    /* opacity: 0.6; */
     resize: none;
     text-align: left;
 }
@@ -142,7 +142,8 @@ body {
     /* color: #ad0926; */
     background: #fdbf21;
     /* font-size:larger; */
-    pointer-events: none;
+    /* pointer-events: none; */
+    opacity: 0.8;
 }
 
 .tracklist {
@@ -158,7 +159,12 @@ body {
 .track {
     padding: 0.2px 4px 0.2px 4px;
     border-radius: 2px;
+    opacity: 0.6;
 }
+
+.track:hover{
+    opacity: 1;
+} 
 
 /* VIDEO PLAYER */
 .video_player {
