@@ -22,7 +22,7 @@ window.onload = () => {
 };
 
 function change_video(){
-    video_player_src.src = videos[Math.floor(videos.length * Math.random())];
+    video_player_src.src = videos[Math.floor(videos.length-1 * Math.random())];
     video_player.volume = 0;
     video_player.load();
     video_player.play();
