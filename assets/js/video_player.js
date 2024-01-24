@@ -25,10 +25,10 @@ window.onload = () => {
     // video_player_timer.play();
 };
 
-async function change_video(){
+function change_video(){
     video_player_src.src = videos[Math.floor(Math.random() * videos.length)];
     // video_closer.style.marginLeft = await video_player.offsetWidth + 50 + 'px';
-    await video_player.load();
+    video_player.load();
     video_player.play();    
 };
 
