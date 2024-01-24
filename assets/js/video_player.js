@@ -7,13 +7,14 @@ const videos = [
     './assets/video/6.mov', 
     './assets/video/7.mov', 
     './assets/video/8.mp4', 
-    './assets/video/9.mp4'
+    './assets/video/9.mp4', 
+    './assets/video/10.mp4'
 ];
 
 window.onload = () => {
     console.log('executed onload');
     video_player.volume = 0;
-    change_video();
+    // change_video();
 
     // let video_player_timer = setInterval(change_video, 1200000);
     video_player.onended = (event) => {
