@@ -27,15 +27,15 @@ window.onload = () => {
 
 async function change_video(){
     video_player_src.src = videos[Math.floor(Math.random() * videos.length)];
-    var isPlaying = video_player.currentTime > 0 && !video_player.paused && !video_player.ended 
-    && video_player.readyState > video_player.HAVE_CURRENT_DATA;
+    // var isPlaying = video_player.currentTime > 0 && !video_player.paused && !video_player.ended 
+    // && video_player.readyState > video_player.HAVE_CURRENT_DATA;
     
     // video_closer.style.marginLeft = await video_player.offsetWidth + 50 + 'px';
 
-    if (!isPlaying) {
+    // if (!isPlaying) {
         video_player.load();
         video_player.play();
-    }
+    // }
 };
 
 function show_video(element) {
