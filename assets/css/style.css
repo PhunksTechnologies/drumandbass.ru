@@ -48,6 +48,11 @@ body {
     margin: 0;
 }
 
+.flex_container_row {
+    display: flex;
+    flex-direction: row;
+}
+
 .navbar {
     width: 100%;
     top: 0;
@@ -258,4 +263,12 @@ body {
     right: 0.5em;
     font-family: 'Montserrat';
     line-height: 14px;
+}
+
+/* APP ICONS */
+
+.app_icon {
+    font-size: 70px;
+    text-indent: 0;
+    margin-right: 0.2em;
 }
