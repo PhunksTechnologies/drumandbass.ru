@@ -29,7 +29,7 @@ async function change_video(){
     video_player_src.src = videos[Math.floor(Math.random() * videos.length)];
     // video_closer.style.marginLeft = await video_player.offsetWidth + 50 + 'px';
     await video_player.load();
-    await video_player.play();    
+    video_player.play();    
 };
 
 function show_video(element) {
