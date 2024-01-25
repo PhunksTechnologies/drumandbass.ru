@@ -272,3 +272,73 @@ body {
     text-indent: 0;
     margin-right: 0.2em;
 }
+
+/* TEAM PAGE */
+
+.character_row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.4em;
+    padding: 1em;
+    border-radius: 0.2em;
+}
+
+.profile_name, .profile_name p, .profile_description{
+    text-indent: 0;
+}
+
+.profile_image, .profile_name, .profile_description, .profile_links {
+    padding: 0.5em;
+    text-indent: 0;
+}
+
+.profile_image {
+    margin-left: 8em;
+    min-width: 10em;
+}
+
+.profile_name {
+    align-self: center;
+    font-size: 24px;
+    min-width: 6em;
+    text-align: right;
+}
+
+.profile_image img {
+    width: 10em;
+    border-radius: 2em;
+    opacity: 0.8;
+    float: right;
+}
+
+.profile_description {
+    padding-top: 1.4em;
+    min-width: 40%;
+}
+
+.profile_description p {
+    text-indent: 1em;
+}
+
+.profile_links {
+    display: flex;
+    flex-direction: column;
+    min-width: 10em;
+    /* text-decoration: none; */
+    padding-top: 1.4em;
+    font-size: 12px;
+    text-align: right;
+    resize: unset;
+}
+.profile_links a:hover {
+    color: #fdbf21;
+    margin-right: 0.4em;
+}
+
+.profile_links a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
