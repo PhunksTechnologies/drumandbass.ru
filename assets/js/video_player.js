@@ -27,7 +27,7 @@ window.onload = () => {
 
 async function change_video(){
     
-    video_player_src.src = videos[Math.floor(Math.random() * videos.length)];
+    video_player_src.src = await videos[Math.floor(Math.random() * videos.length)];
     // var isPlaying = video_player.currentTime > 0 && !video_player.paused && !video_player.ended 
     // && video_player.readyState > video_player.HAVE_CURRENT_DATA;
     
