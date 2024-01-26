@@ -34,9 +34,9 @@ async function change_video(){
     // video_closer.style.marginLeft = await video_player.offsetWidth + 50 + 'px';
 
     // if (!isPlaying) {
-        await video_player.pause();
+        // await video_player.pause();
         await video_player.load();
-        await video_player.play();
+        video_player.play();
     // }
 };
 
