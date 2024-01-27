@@ -306,7 +306,7 @@ body {
 
 .profile_image img {
     width: 10em;
-    border-radius: 2em;
+    border-radius: 0.4em;
     opacity: 0.8;
     float: right;
 }
